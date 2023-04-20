@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+   color: var(--primary-color); 
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+/* variable defined */
+:root{
+    --primary-color:#f5c332;
+    --secondary-color:#231E41;
+    --white-color:#fff;
+    --black-color:#1c1c1c;
+    /* text code variable */
+    --primary-color:#f5c332;
+    --secondary-color:#231E41;
+    --white-color:#fff;
+    --text-color:#555;
+    --text-gray:#999
+
+}
+    
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto' sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+::-webkit-scrollbar{
+    width: 0.425rem;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+h1{
+    font-size: 3.125rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color:var(--text-secondary);
+    text-transform: capitalize;
+}
+h2{
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color:var(--text-secondary);
+    text-transform: capitalize;
+}
+h4{
+    font-size: 1.125rem;
+    font-weight: 800;
+    color:var(--text-secondary);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+h5{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color:var(--text-secondary);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+p{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: .0625rem;
+}
+.main-btn{
+    padding: 0.625rem 1.875rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0.125rem .625rem -0.0625rem (0 0 0 /19%);
+    -webkit-transition:all .4s ease-in-out 0s ;
+    -ms-transition: all .4s ease-in-out 0s;
+    -o-transition:all .4s ease-in-out 0s ;
+    -moz-transition: all .4s ease-in-out 0s;
+    transition: all .4s ease-in-out 0s;
+    border: 0.1875rem solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--black-color);
+}
+.main-btn:hover{
+    background: transparent;
+    color: var(--primary-color);
+}
+.wrapper{
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+.text-content{
+    width: 70%;
+    margin: 0 auto;
+}
+.counter-section h2,
+.testimonial-section,
+.book-food-text h2{
+ column-gap: var(--primary-color);
+}
+
+/* navbar desined */
+.navigation-wrap.scroll-on{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: var(--white-color);
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3 ease-in-out;
+}
+.navigation-wrap .navbar-brand img{
+    width: 13rem;
+}
+.navigation-wrap .navbar-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+.navigation-wrap .navbar-toggler:focus{
+    outline: none;
+    border: unset;
+    box-shadow: none;
+}
+.navigation-wrap .nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    letter-spacing: .0625rem;
+}
+.navigation-wrap .main-btn{
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+/* .banner-desined */
+.top-banner{
+    width: 100%;
+    background-image: url("/images/img1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 14.857rem 0 9.375rem;
+}
+
+/* counter desined */
+
+.counter-section{
+    background-color: var(--black-color);
+    padding: 2.5rem 0;
+}
+.counter-section p{
+    color: var(--white-color);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+/* about */
+.about-section {
+    background-color: var(--white-color);
+}
+
+.about-section .container {
+    display: flex;
+}
+
+.about-section .card,
+.about-section .card img {
+    border-radius: 0.625rem;
+}
+
+.about-section .text-sec {
+    padding-left: 2rem;
+}
+/* story section */
+.story-section {
+    width: 100%;
+    height: 28.125rem;
+    background-image: url("/images/img5.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.story-section h2 {
+    color: var(--primary-color);
+}
+/* explore section */
+.explore-food .card {
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+}
+
+.explore-food .card img {
+    border-radius: 0.9375rem;
+    object-fit: cover;
+}
+
+.explore-food .card span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid #eee;
+}
+
+.explore-food .card span del {
+    color: var(--text-grey);
+    margin-left: 0.5rem;
+}
+/* text */
+.testimonial-section {
+    background-color: var(--primary-color);
+}
+
+.testimonial-section .carousel-item {
+    margin-top: 3rem;
+    padding: 10rem 3.125rem;
+    background-color: var(--white-color);
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+
+.testimonial-section .carousel-item img {
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+}
+
+.testimonial-section .carousel-item p {
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding: 0 11% 0 0.625rem;
+}
+
+.testimonial-section .carousel-indicators {
+    bottom: -2.8125rem;
+}
+
+.testimonial-section .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+
+.testimonial-section .carousel-indicators button:active {
+    opacity: 1;
+}
+
+/* faq */
+
+.faq h4 span {
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    margin-right: 0.3125rem;
+}
+
+/* book food */
+.book-food {
+    width: 100%;
+    background: url("/images/img4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.375rem 0;
+}
+
+/* .news letter */
+.newsletter {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.newsletter .form-control {
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border: 0.1887rem solid var(--text-grey);
+    color: var(--black-color);
+    font-weight: 700;
+}
